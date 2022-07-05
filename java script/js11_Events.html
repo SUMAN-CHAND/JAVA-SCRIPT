@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<style>
+#btn{
+    padding: 10px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+    font-weight: bolt;
+    color: wheat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+    domcontentloaded
+    transitionend -->
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita consequuntur harum, veritatis, nobis quisquam alias nam magnam perferendis quae explicabo mollitia dolorum neque earum fuga quos corrupti. Fugit blanditiis dignissimos quibusdam nam in amet quos quae cum odio fugiat nobis est iste itaque expedita laboriosam repudiandae dolore doloribus aliquam, temporibus repellendus molestias quis! Fuga quam blanditiis, amet eum asperiores hic. Modi obcaecati dolorum neque quo officiis et voluptates sit officia cupiditate impedit quia eius in, sapiente ipsam distinctio assumenda nobis corporis illo harum asperiores velit tempora vero dolores mollitia? Earum id dolor nam repellendus voluptatibus laborum. Amet rem officiis repudiandae a maxime alias fuga at deleniti, incidunt consectetur eligendi minima aut doloremque quo ea voluptate, iste possimus optio ex id nulla libero reiciendis voluptatibus magnam. Nam, quaerat. Rerum voluptate nobis reiciendis necessitatibus! Eius, nulla! Expedita amet quos et atque deserunt facilis distinctio beatae, voluptates blanditiis doloremque asperiores placeat facere nemo sed dolorum adipisci tempore, dolores harum modi. Eum, laborum. Dignissimos, omnis itaque qui aperiam ex rerum mollitia aut repellendus repellat pariatur laborum. Provident placeat odio eius, quia modi perspiciatis sequi at nemo temporibus ratione est! Facilis magni nulla ullam iste minus soluta doloribus. Itaque sunt consequuntur expedita hic porro? Quod, praesentium. Odio iste vero ullam cumque adipisci? Animi, quia harum culpa, minima alias distinctio accusamus deserunt ipsum ut ratione molestiae temporibus expedita deleniti illum nostrum?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+            let para=document.getElementById('para');
+            para.addEventListener('mouseover',function run(){
+               console.log('Mouse Inside');
+            });
+            para.addEventListener('mouseout',function run(){
+                console.log('Mouse now went outside');
+            });
+            
+
+        function toggleHide(){
+            // let btn=document.getElementById('btn');
+            // let para=document.getElementById('para');
+            if (para.style.display!='none') {
+            para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+
+        }
+        }
+    </script>
+        </body>
+</html>

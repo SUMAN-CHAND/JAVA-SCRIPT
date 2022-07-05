@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is Math Object tutorial</h1>
+    </div>
+</body>
+<script>
+    //Printing the object
+    let m = Math;
+    console.log(m);
+    //printing the constant from math object
+    console.log("The value of math.E is", Math.E);
+    console.log("The value of math.LN2 is", Math.LN2);
+    console.log("The value of math.LN10 is", Math.LN10);
+    console.log("The value of math.LOG2E is", Math.LOG2E);
+    console.log("The value of math.PI is", Math.PI);
+
+
+   
+    //printing the Functoin from math object
+    let a=35.565656;
+    let b=85;
+
+    console.log("The value of a , b is ", a,b);
+    console.log("The value of a , b round is ",Math.round(a),Math.round(b));
+    console.log("3 to power 2 is ",Math.pow(3,2));
+    console.log("12 to power 2 is ",Math.pow(12,2));
+    console.log("25 to power 2 is ",Math.pow(25,2));
+    console.log("2 to power 3 is ",Math.pow(2,3));
+
+    console.log("squrt root of 25 is ",Math.sqrt(25));
+    console.log("squrt root of 64 is ",Math.sqrt(64));
+    console.log("squrt root of 56 is ",Math.sqrt(56));
+
+
+   //ceil 7 floor
+   console.log("5.6 rounded up to  nearest integer is",Math.ceil(5.6));
+   console.log("5.6 rounded down to  nearest  integer is",Math.floor(5.6));
+
+   //Abs value
+   console.log("Absolute value of 5.6 is",Math.abs(5.6));
+   console.log("Absolute value of -5.6 is",Math.abs(-5.6));
+
+   //trignomatric value
+   console.log("The value of sin(Pi/2) is ",Math.sin(Math.PI/2));
+   console.log("The value of tan(Pi/2) is ",Math.tan(Math.PI/2));
+   console.log("The value of cos(Pi/2) is ",Math.cos(Math.PI/2));
+
+   //Minimum value
+   console.log("Minimum value of 4,5,6 is",Math.min(4,5,6));
+   console.log("Minimum value of 4,5,6 is",Math.min(41,55,62));
+   //maximum
+   console.log("Maximum value of 4,5,6 is",Math.max(4,5,6));
+   console.log("Maximum value of 4,5,6 is",Math.max(41,52,6));
+
+   //rendom value
+   let r= Math.random();
+   //random number in a-b is =a*(b-a)Math.random;
+   a1=1;
+   b1=100;
+   let r1_100= a1*(b1-a1)*Math.random();
+   console.log("Rendom number is",r);
+   console.log("Rendom number is",r1_100);
+
+
+
+</script>
+
+</html>
